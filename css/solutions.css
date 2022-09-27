@@ -111,6 +111,64 @@
 }
 
 
+.ex-12-button:hover .ex-12-top-white{
+  animation-name: turn-half;
+  animation-duration: 4s;
+  animation-iteration-count:unset
+  animation-timing-function: linear;
+}
+
+@keyframes turn-half {
+  0%{
+    left: 20%;
+  }
+
+  25%{
+    left: 25%;
+  }
+  
+  50%{
+    left: 40%;
+  }
+  
+  75%{
+    left: 55%;
+  }
+
+  100%{
+    left: 70%;
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation-name: turn-half2;
+  animation-duration: 4s;
+  animation-iteration-count:unset
+  animation-timing-function: linear;
+}
+
+@keyframes turn-half2 {
+  0%{
+    right: 20%;
+  }
+
+  25%{
+    right: 25%;
+  }
+  
+  50%{
+    right: 40%;
+  }
+  
+  75%{
+    right: 55%;
+  }
+
+  100%{
+    right: 70%;
+  }
+}
+
 
 
 
