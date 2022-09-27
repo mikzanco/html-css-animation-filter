@@ -105,7 +105,10 @@
 
 @keyframes turn-well {
   0%{
-    transform: rotate(0.7turn);
+    transform: rotate(0.85turn);
+  }
+  100%{
+    transform: rotate(0);
   }
   
 }
@@ -123,16 +126,16 @@
     left: 20%;
   }
 
-  25%{
+  /* 25%{
     left: 25%;
   }
   
   50%{
     left: 40%;
-  }
+  } */
   
   75%{
-    left: 55%;
+    left: 60%;
   }
 
   100%{
@@ -152,16 +155,16 @@
     right: 20%;
   }
 
-  25%{
+  /* 25%{
     right: 25%;
   }
   
   50%{
     right: 40%;
-  }
+  } */
   
   75%{
-    right: 55%;
+    right: 60%;
   }
 
   100%{
@@ -170,34 +173,81 @@
 }
 
 
-.ex-13-button .ex-13-top-white{
+.ex-13-button:hover .ex-13-top-white{
   animation-name: turn-half3;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count:unset
   animation-timing-function: linear;
 }
 
 @keyframes turn-half3 {
   0%{
-    left: 100%;
+    left: 20%;
   }
+
+20%{
+  top: -5%;
+  left: 80%;
+}
+
+40%{
+  top: 80%;
+  left: 80%;
+}
+
+60%{
+  top: 80%;
+  left: -2%;
+}
+
+  
+
+80%{
+  top: -5%;
+  left: -5%;
+ }
 
 
 }
 
-.ex-13-button .ex-13-bottom-white{
+
+
+.ex-13-button:hover .ex-13-bottom-white{
   animation-name: turn-half4;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count:infinite
   animation-timing-function: linear;
 }
 
 @keyframes turn-half4 {
-  0%{
-    right: 100%;
-  }
+0%{
+  right: 20%;
+}
 
- 
+20%{
+  bottom: -5%;
+  right: 80%;
+}
+
+40%{
+  bottom: 80%;
+  right: 80%;
+}
+
+60%{
+  bottom: 80%;
+  right: -5%;
+}
+
+70%{
+  bottom: -5%;
+  right: -5%;
+}  
+
+
+80%{
+  right: 20%;
+ } 
 }
 
 
