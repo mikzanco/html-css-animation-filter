@@ -95,19 +95,24 @@
   
 }
 
-.ex-11-icon{
-  animation-name: turn-well2;
-  animation-duration: 2s;
-  animation-iteration-count:calc(3/4turn)
+.ex-11-icon:hover{
+  animation-name: turn-well;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   animation-direction: reverse;
 }
 
-@keyframes turn-well2:hover {
+@keyframes turn-well {
   0%{
-    transform: rotate(1);
+    transform: rotate(0.7turn);
   }
   
 }
+
+
+
+
 
 
 
