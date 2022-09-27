@@ -97,7 +97,7 @@
 
 .ex-11-icon:hover{
   animation-name: turn-well;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: reverse;
