@@ -27,7 +27,8 @@
 }
 
 .ex-4-square:hover{
-  background-color: #f5f5f5 ;
+  /* background-color: #f5f5f5 ; */
+  opacity: 0;
 }
 
 .ex-5-square{
@@ -35,23 +36,77 @@
 }
 
 .ex-5-square:hover{
-  width: 150px;
-  height: 150px;
-  margin: 0;
+  transform: scale(0.5);
 }
 
 .ex-5-square:active{
-  width: 30px;
-  height: 30px;
-  margin: 40px;
+  transform: scale(2);
 }
 
-.ex-6-img{
+/****TRANSIZIONE ES6 NON NECESSARIA PERCHè NON RICHIESTA
+
+/* .ex-6-img{
   transition: 2s;
-}
+} */
 
 .ex-6-img:hover{
   filter: grayscale(100%);
+}
+
+.ex-7-img{
+  transition: 2s;
+}
+
+.ex-7-img:hover{
+  filter: blur(20px) grayscale(100%);
+  filter: contrast(1.5);
+}
+
+.ex-8-img{
+  transition: 2s;
+}
+
+.ex-8-img:hover{
+  border-radius: 20px;
+  filter: sepia(20px) grayscale(80%);
+}
+
+.ex-9-img{
+  transition: 2s;
+}
+
+.ex-9-img:hover{
+  border-radius: 20px;
+  filter:  grayscale(80%);
+  transform: scale(1.5);
+}
+
+.ex-10-icon{
+  animation-name: turn-well;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes turn-well {
+  0%{
+    transform: rotate(1turn);
+  }
+  
+}
+
+.ex-11-icon{
+  animation-name: turn-well2;
+  animation-duration: 2s;
+  animation-iteration-count:calc(3/4turn)
+  animation-direction: reverse;
+}
+
+@keyframes turn-well2:hover {
+  0%{
+    transform: rotate(1);
+  }
+  
 }
 
 
